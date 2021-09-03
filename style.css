@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+:root{
+    --red :#ff2143;
+    --black : #000000;
+    --blue: #1B4864;
+    --lightgrey:#F7F7F7;
+}
+#Services{
+    background-color: var(--lightgrey)  ;
+}
+p{
+    font-size: small;
+    margin-bottom: 0;
+}
+h6{
+    margin: 0;
+}
+.Navigation{
+    position: fixed;
+    color: black;
+    background-color: white;
+    z-index: 999 ;
+}
+.padding-nav{
+    padding:  1.5rem 0;
+}
+/* HomePage */
+.Home{
+    height: 100vh;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9) ,rgba( 255,255, 255, 0.4),rgba(0, 0, 0, 0.7)),url('./Images/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 10%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.subheading{
+    color: var(--red);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.subheading .dash{
+    background-color: var(--red);
+    width: 3rem;
+    height: 2px;
+    margin-right: 1rem;
+}
+.hometext h1{
+    font-weight: 900;
+    font-size: 4rem;
+    color: var(--black);
+}
+.hometext button{
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* about */
+
+.headdash{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.headdash .dash{
+    width: 5rem;
+    height: 2px;
+    margin-right: 1rem;
+    background-color: var(--red) ;
+}
+.headdash h4{
+    font-weight: bold;
+}
+
+/* Services */
+
+.headdash p{
+    color: var(--red);
+    text-transform: uppercase;
+}
+.Services h1{
+    font-weight: 900;
+    
+}
+.service-card{
+    height: 50vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-card-details{
+    position: relative;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.service-card-details img{
+    width: 3rem;
+    height: auto;
+}
+.service-card-details h6{
+    font-weight: bold;
+    color: var(--blue);
+}
+.line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--red) ;
+    transition: 1s;
+    align-self: flex-start;
+}
+.service-card-details:hover .line{
+    width: 100%;
+}
+
+/* Top Services */
+
+.Topservices{
+    height: 100vh;
+    background-image: url('./Images/topservices-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--lightgrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Topservicesbg{
+    height: 70vh;
+    background-image: url('./Images/topservices.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.Topservicestext{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 4rem;
+}
+.Topservicestext .headdash{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Topservicestext .headdash .dash{
+    width: 5rem;
+    height: 2px;
+    margin-right: 1rem;
+    background-color: var(--lightgrey) ;
+}
+.Topservicestext p{
+    color: var(--lightgrey);
+}
+.Topservices h2{
+    font-weight: bold;
+    color: var(--lightgrey);
+}
+.Topservicestext button{
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
