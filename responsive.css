@@ -55,6 +55,18 @@
     footer .socialmedia{
         justify-content: flex-start;
     }
+    .Addvertisement{
+        height: 30vh;
+    }
+    .inner-data{
+        text-align: center;
+    }
+    .inner-data button{
+        margin-top: 2rem;
+    }
+    .blogimg{
+        height: 30vh;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
@@ -84,8 +96,21 @@
     .portfolioimg{
         height: 20vh;
     }
+    .Addvertisement{
+        height: 20vh;
+    }
+    .details-card{
+        height: 10vh;
+    }
+    .blogimg{
+        height: 20vh;
+    }
     .Testimonials{
-        height: 45vh;
+        height: 35vh;
+    }
+    .team-img{
+        height: 20vh;
+        
     }
     #footer{
         height: 55vh;

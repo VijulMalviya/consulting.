@@ -12,8 +12,8 @@
     --blue: #092c3f;
     --lightgrey:#F7F7F7;
 }
-#Services, #Portfolio , #Team{
-    background-color: var(--lightgrey)  ;
+#Services, #Portfolio , #Team , #Blog, #partners{
+    background-color: var(--lightgrey);
 }
 p{
     font-size: small;
@@ -362,6 +362,94 @@ h6{
     font-size: 1rem;
     font-weight: bold;
 }
+
+/* Addvertisement */
+
+.Addvertisement{
+    height: 40vh;
+    background-image: url('./Images/advertisement-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Addvertisement h2{
+    font-weight: 900;
+    color: var(--lightgrey);
+}
+.Addvertisement button{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+.Addvertisement .inner-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* .Blog   */
+
+.Blog-text .headdash{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Blog-text .headdash .dash{
+    width: 5rem;
+    height: 2px;
+    margin-right: 1rem;
+    background-color: var(--red) ;
+}
+.Blog-text h2{
+    font-weight: 900;
+    color: var(--blue);
+}
+.blogimg{
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.b1{
+    background-image: url('./Images/b-1.webp');
+}
+.b2{
+    background-image: url('./Images/b-2.webp');
+}
+
+.blog-text{
+    background-color: white ;
+}
+.blog-text .small-dash{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--red);
+}
+.small-dash .dash{
+    width: 2rem;
+    height: 2px;
+    background-color: var(--red);
+    margin-right: 1rem;
+}
+.blog-text h4{
+    font-weight: 600;
+}
+.date i{
+    margin-right: 0.5rem;
+}
+
+/* footer */
+
 #footer{
     height: 70vh;
     background-image: url('./Images/footer-bg.webp');
