@@ -362,3 +362,63 @@ h6{
     font-size: 1rem;
     font-weight: bold;
 }
+#footer{
+    height: 70vh;
+    background-image: url('./Images/footer-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.footer1{
+    color: var(--lightgrey);
+}
+.footer1 ul li,.footer2 ul li,.footer3 ul li,.footer4 ul li{
+    list-style: none;
+}
+.footer4 form input{
+    outline: none;
+    border: 1px solid var(--blue);
+}
+.footer4 button{
+    border: none;
+    outline: none;
+    font-size: small;  
+}
+.footerhead{
+    color: white;
+    margin-bottom: 2rem;
+}
+footer li{
+    margin-top: 0.5rem;
+}
+footer a{
+    color: rgb(224, 219, 219);
+    text-decoration: none;
+}
+.footerhead p{
+    color: var(--red);
+}
+footer .call{
+    color:  white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+footer .call span{
+    color: var(--red);
+}
+.footerabout{
+    margin-top: 1.4rem;
+}
+.footer hr{
+    margin-top: 5rem;
+    color: var(--lightgrey);
+}
+footer .lowerfooter{
+    color: var(--lightgrey);
+}
+footer .socialmedia{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: small;
+}
