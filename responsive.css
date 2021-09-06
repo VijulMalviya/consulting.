@@ -67,6 +67,15 @@
     .blogimg{
         height: 30vh;
     }
+    .Contact .icon{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 5px;
+    }
+    .Contact .address{
+        margin-top: 3rem;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
@@ -118,4 +127,5 @@
     footer .socialmedia{
         justify-content: flex-start;
     }
+    
 }

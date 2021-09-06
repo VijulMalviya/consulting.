@@ -38,11 +38,12 @@ h6{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 10%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+   
 
 .subheading{
     color: var(--red);
@@ -113,6 +114,8 @@ h6{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: 1s;
+    cursor: pointer;
 }
 .service-card-details img{
     width: 3rem;
@@ -122,19 +125,10 @@ h6{
     font-weight: bold;
     color: var(--blue);
 }
-.line{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: var(--red) ;
-    transition: 1s;
-    align-self: flex-start;
+.service-card-details:hover{
+    transform: scale(1.1);
 }
-.service-card-details:hover .line{
-    width: 100%;
-}
+
 
 /* Top Services */
 
@@ -328,11 +322,28 @@ h6{
     font-weight: 900;
     color: var(--blue);
 }
+.team-img1,.team-img2,.team-img3{
+    height: 50vh; 
+    overflow: hidden;
+    transition: 1s;
+}
+.inner-team-card:hover .t1{
+    transform: scale(1.05);
+}
+.inner-team-card:hover .t2{
+    transform: scale(1.05);
+}
+.inner-team-card:hover .t3{
+    transform: scale(1.05);
+}
+
 .team-img{
-    height: 50vh;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: 1s;
 }
 .t1{
     background-image: url('./Images/t-1.webp');
@@ -448,6 +459,40 @@ h6{
     margin-right: 0.5rem;
 }
 
+/* Contact */
+
+.Contact h5{
+    font-weight: bold;
+}
+form input,textarea{
+    padding: 0.5rem;
+    font-size: small;
+    border: 1px solid lightgray;
+    border-radius: 0;
+    
+}
+form input:focus{
+    border: 1px solid red;
+}
+form button{
+    border: 1px solid black;
+    outline: none;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: small;
+}
+.Contact .icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 5px;
+}
+.Contact .address a{
+    color: black;
+    text-decoration: none;
+}
+
 /* footer */
 
 #footer{
@@ -483,6 +528,9 @@ footer a{
     color: rgb(224, 219, 219);
     text-decoration: none;
 }
+footer a:hover{
+    color: var(--red);
+}
 .footerhead p{
     color: var(--red);
 }
@@ -510,3 +558,7 @@ footer .socialmedia{
     align-items: center;
     font-size: small;
 }
+
+
+
+
