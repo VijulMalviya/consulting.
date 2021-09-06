@@ -6,6 +6,11 @@
     box-sizing: border-box;
     font-family: 'Sarabun', sans-serif;
 }
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+}
 :root{
     --red :#ff2143;
     --black : #000000;
@@ -15,6 +20,9 @@
 #Services, #Portfolio , #Team , #Blog, #partners{
     background-color: var(--lightgrey);
 }
+#About, #Services,#portfolio,#Team,#Blog,#Contact,#partners{
+    padding-top:6rem !important;
+}
 p{
     font-size: small;
     margin-bottom: 0;
@@ -22,6 +30,68 @@ p{
 h6{
     margin: 0;
 }
+
+/* loader */
+
+.loader{
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.loader .loaderdiv{
+    position: relative;
+    width: 10rem;
+    height: 4rem;
+    /* background-color:red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader .line1{
+    position: absolute;
+    background-color: var(--red);
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    animation: line1 2s ease-in-out 0s infinite alternate-reverse both;
+}
+@keyframes line1 {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+    
+}
+.loader .line2{
+    position: absolute;
+    background-color: var(--blue);
+    top: 0;
+    width: 100%;
+    height: 2px;
+    animation: line2 2s ease-in-out 0s infinite alternate-reverse both;
+
+}
+@keyframes line2 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+    
+}
+.loader img{
+    width: 5rem;
+}
+
+/* Navigation */
+
 .Navigation{
     position: fixed;
     color: black;
@@ -31,6 +101,38 @@ h6{
 .padding-nav{
     padding:  1.5rem 0;
 }
+.logo img{
+    width: 8rem;
+}
+.nav-links ul{
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h6{
+    display: none;
+}
+.nav-links ul li{
+    display: inline-block;
+    padding: 0rem 1rem;
+    margin: 0;
+}
+.nav-links a{
+    text-decoration: none;
+    color: var(--blue);
+    font-size:small;
+}
+.nav-links a:hover{
+    color: var(--red);
+}
+
 /* HomePage */
 .Home{
     height: 100vh;

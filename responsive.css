@@ -1,5 +1,7 @@
 @media screen and (max-width:576px) {
-    
+    .body{
+        overflow-x: hidden !important;
+    }
     .Home{
         background: linear-gradient(to right, rgba(255, 255, 255, 0.9) ,rgba( 255,255, 255, 0.8),rgba(255, 255, 255, 0.2)),url('./Images/home-bg.jpg');
         background-size: cover;
@@ -76,6 +78,23 @@
     .Contact .address{
         margin-top: 3rem;
     }
+    .nav-links{
+        display: none;
+    }
+    .nav-links ul{
+        margin-top: 1rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav-links ul li{
+        display: block;
+        padding: 1rem 0rem;
+        margin: 0;
+    }
+    .logo h6{
+        display: initial;
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
@@ -117,8 +136,8 @@
     .Testimonials{
         height: 35vh;
     }
-    .team-img{
-        height: 20vh;
+    .team-img1,.team-img2,.team-img3{
+        height: 20vh; 
         
     }
     #footer{
@@ -129,3 +148,10 @@
     }
     
 }
+
+
+
+
+
+
+
